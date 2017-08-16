@@ -6,9 +6,9 @@ import java.security.NoSuchAlgorithmException;
 public class Encryption {
 
     //HARDCODED, should be changed
-    public static String ENCRYPT_FILENAME = "C:\\Users\\mmif__000\\Desktop\\encrypted.txt";
-    public static String MESSAGE_FILENAME = "C:\\Users\\mmif__000\\Desktop\\message.txt";
-    public static String DECRYPT_FILENAME = "C:\\Users\\mmif__000\\Desktop\\decrypted.txt";
+    public static String ENCRYPT_FILENAME = System.getProperty("user.home") + "\\Desktop\\encrypted.txt";
+    public static String MESSAGE_FILENAME = System.getProperty("user.home") + "\\Desktop\\message.txt";
+    public static String DECRYPT_FILENAME = System.getProperty("user.home") + "\\Desktop\\decrypted.txt";
     public static String key = "Bar12345Bar12345";
     public static String initVector = "RandomInitVector";
 
