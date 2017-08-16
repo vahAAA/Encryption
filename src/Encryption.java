@@ -1,6 +1,7 @@
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 
 
 public class Encryption {
@@ -44,7 +45,7 @@ public class Encryption {
         }
     }
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    public static void main(String[] args) throws NoSuchAlgorithmException, IOException, InvalidKeySpecException {
 
         //generating RSA keys
         RSA.generateKey();
